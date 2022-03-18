@@ -1,2 +1,2 @@
 # Hello 👋!
-https://andynguyen.dev
+Check out my website at https://andynguyen.dev!
