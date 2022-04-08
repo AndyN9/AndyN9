@@ -1,0 +1,28 @@
+name: Update recent posts
+# https://github.com/sarisia/actions-readme-feed
+
+on:
+  schedule:
+    - cron: '0 0 * * SUN'
+
+jobs:
+  update-recent-posts:
+    steps:
+      - name: Checkout git branch
+        uses: actions/checkout@v3
+      - name: Check RSS feed
+        uses: sarisia/actions-readme-feed@v1
+        id: feed
+        with:
+          url: 'https://andynguyen.dev/rss.xml'
+          file: 'README.md'
+          max_entry: 3
+      - name: Commit any changes
+        if: ${{ steps.feed.outputs.changed == true }}
+        run: |
+          echo "Change detected!"
+          git config --global user.name "AndyN9"
+          git config --global user.email "13814584+AndyN9@users.noreply.github.com"
+          git add .
+          git commit -m "docs: update feed" || true
+          git push
