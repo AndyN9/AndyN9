@@ -9,6 +9,7 @@ on:
 
 jobs:
   update-recent-posts:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout git branch
         uses: actions/checkout@v3
