@@ -2,6 +2,8 @@ name: Update recent posts
 # https://github.com/sarisia/actions-readme-feed
 
 on:
+  push:
+    branches: [ main ]
   schedule:
     - cron: '0 0 * * SUN'
 
