@@ -5,7 +5,7 @@
 
 ## Recent Posts
 <!-- feed start -->
+- Nov 03 - [Using Docker for WordPress Plugin Development](https://andynguyen.dev/blog/using-docker-wordpress-plugin-development/)
 - May 05 - [How I Start a Personal React Project in 2022](https://andynguyen.dev/blog/start-personal-react-project-2022/)
 - Apr 14 - [Asking GitHub Copilot for Financial Advice (a First Look at GitHub Copilot)](https://andynguyen.dev/blog/asking-github-copilot-financial-advice-first-look-github-copilot/)
-- Mar 24 - [How To Deploy Gatsby to GitHub Pages With gh-pages and GitHub Actions](https://andynguyen.dev/blog/deploy-gatsby-github-pages-gh-pages-github-actions/)
 <!-- feed end -->
